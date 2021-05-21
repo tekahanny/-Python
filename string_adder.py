@@ -9,7 +9,7 @@
 # string_adder("Tiger")               => "Tiger "string
 
 def string_adder(a = "", b = ""):
-    return str(a) + " " + str(b)
+    return a + " " + b
 
 
 print(string_adder("Hello", "World") )
