@@ -27,3 +27,37 @@
 # Use list comprehension to invoke the "use" method on all three objects in "dental_health_kit".
 # Assign the resulting list of strings to an "actions" variable.
 
+import random
+
+class DentalHealthItem():
+    def __init__ (self, price):
+        self.price = price
+
+class Toothbrush(DentalHealthItem):
+    def use(self):
+        return "Brushing the teeth"
+
+class Floss(DentalHealthItem):
+    def use(self):
+        return "Flossing the teeth"
+
+class Mouthwash(DentalHealthItem):
+    def use(self):
+        return "washing the teeth"
+
+toothbrush = Toothbrush(1)
+floss = Floss(1)
+mouthwash = Mouthwash(1)
+
+dental_health_kit = [toothbrush, floss, mouthwash]
+random.shuffle(dental_health_kit)
+action = [item.use() for item in dental_health_kit]
+print(action)
+
+print()
+print()
+print()
+
+
+
+
