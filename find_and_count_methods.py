@@ -33,3 +33,24 @@ def find_my_letter(word, character):
 print(find_my_letter("dangerous", "a"))
 print(find_my_letter("bazooka", "z"))
 print(find_my_letter("lollipop", "z"))
+
+
+print()
+print()
+print()
+
+
+A = ("hearts", "diamonds", "spades", "flowers")
+B = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+c = []
+for a in A:
+    for b in B:
+         c.append((a, b))
+         
+         
+
+print(len(c))
+
+   
+
+
