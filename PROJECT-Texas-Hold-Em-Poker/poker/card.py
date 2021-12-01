@@ -23,6 +23,7 @@ class Card():
             raise ValueError(f"Invalid suit. Suit must be one of the following: {self.SUITS}")
 
         self.rank = rank
+        self.rank_index = self.RANKS.index(rank)
         self.suit = suit
 
     def __str__(self):
@@ -33,5 +34,8 @@ class Card():
 
     def __eq__(self, other):
         return self.rank == other.rank and self.suit == other.suit
+
+    def __lt__(self, other):
+        return self.rank_index < other.rank_index
 
     
